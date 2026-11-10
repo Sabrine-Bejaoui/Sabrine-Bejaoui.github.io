@@ -370,7 +370,7 @@ PROJECTS = [
     },
     {
         "slug": "kosu-digital",
-        "cover": {"en": "kosu-headcount"},
+        "cover": {"en": "kosu-cover"},
         "hide_cover": True,
         "repo": None,
         "stack_short": ["Python", "ETL", "Data warehouse", "FastAPI", "PostgreSQL", "React", "Node.js"],
