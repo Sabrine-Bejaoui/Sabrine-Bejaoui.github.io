@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KOSU Digital at LEONI — Sabrine Bejaoui</title>
+<meta name="description" content="A web application and KPI dashboard that replaced paper-based productivity reporting on LEONI&#x27;s production lines with real-time monitoring.">
+<meta name="author" content="Sabrine Bejaoui">
+<link rel="canonical" href="https://sabrine-bejaoui.github.io/projects/kosu-digital/">
+<link rel="alternate" hreflang="en" href="https://sabrine-bejaoui.github.io/projects/kosu-digital/">
+<link rel="alternate" hreflang="fr" href="https://sabrine-bejaoui.github.io/fr/projets/kosu-digital/">
+<link rel="alternate" hreflang="x-default" href="https://sabrine-bejaoui.github.io/projects/kosu-digital/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="KOSU Digital at LEONI — Sabrine Bejaoui">
+<meta property="og:description" content="A web application and KPI dashboard that replaced paper-based productivity reporting on LEONI&#x27;s production lines with real-time monitoring.">
+<meta property="og:url" content="https://sabrine-bejaoui.github.io/projects/kosu-digital/">
+<meta property="og:image" content="https://sabrine-bejaoui.github.io/assets/img/og.png">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FAF8F4">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../../assets/fonts/instrument-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../assets/fonts/newsreader-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="../../"><span class="mono">SB</span><span>Sabrine Bejaoui</span></a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    <ul class="nav-links" id="nav-links"><li><a href="../../#about">About</a></li><li><a href="../../#projects">Projects</a></li><li><a href="../../#skills">Skills</a></li><li><a href="../../#experience">Experience</a></li><li><a href="../../#contact">Contact</a></li><li><div class="lang" role="group" aria-label="Language"><span aria-current="true">EN</span><a href="../../fr/projets/kosu-digital/" hreflang="fr" lang="fr" data-lang-switch="fr" aria-label="Version française">FR</a></div></li></ul>
+  </div>
+</header>
+<main id="main">
+<div class="wrap">
+  <p class="crumb"><a href="../../#projects">← All projects</a></p>
+  <div class="p-hero">
+    <span class="eyebrow">End-of-studies internship · Business intelligence · Industry</span>
+    <h1>KOSU Digital at LEONI</h1>
+    <p class="lead">A web application and KPI dashboard that replaced paper-based productivity reporting on LEONI&#x27;s production lines with real-time monitoring.</p>
+    <dl class="p-meta"><div><dt>Type</dt><dd>End-of-studies internship</dd></div><div><dt>Company</dt><dd>LEONI Wiring Systems, Bizerte</dd></div><div><dt>Period</dt><dd>Feb – May 2025</dd></div><div><dt>Team</dt><dd>Two students</dd></div></dl>
+  </div>
+  <figure class="cover reveal" style="margin:0"><img src="../../assets/img/kosu-headcount.webp" alt="KOSU Digital hourly headcount management screen" fetchpriority="high"></figure>
+  <p class="note">Screenshots from the internship report. The interface is in French, the working language on site.</p>
+<div class="split reveal"><h2>The problem</h2><div class="prose"><p>Productivity on the production lines was measured with KOSU, an indicator comparing the time actually spent with the target time. Data was recorded on paper, which delayed analysis and made it hard to react to waste and performance gaps during a shift.</p></div></div>
+<div class="split reveal"><h2>Objectives</h2><div class="prose"><ul><li>Replace paper-based reporting with a digital solution for real-time monitoring of production-line productivity.</li><li>Centralize production data from several sources in a reliable data warehouse.</li><li>Let supervisors record output, headcount and incidents hour by hour.</li><li>Give managers dashboards and alerts to spot waste and performance gaps quickly, in support of Lean manufacturing.</li></ul></div></div>
+<div class="split reveal"><h2>Key features</h2><div class="prose"><ul class="features"><li><strong>Role-based access</strong>Separate spaces for administrators, industrial engineering, supervisors and segment managers.</li><li><strong>Line management</strong>Supervisors enter shift parameters, then adjust headcount and product references hour by hour.</li><li><strong>Waste (MUDA) tracking</strong>Supervisors report a MUDA (breakdown, shortage, staffing, material); a timer measures the downtime until it is resolved.</li><li><strong>Deviations and actions</strong>Deviations are logged per time slot with the corrective measure taken.</li><li><strong>Line status</strong>Segment managers see in real time which lines have an open issue and which are resolved.</li><li><strong>KOSU dashboard</strong>Fed by the ETL pipeline, with color-coded alerts on the gap between actual and target KOSU, and filters by shift and date.</li></ul></div></div>
+<div class="split reveal"><h2>My contribution</h2><div class="prose"><p>This was a two-person end-of-studies project. I contributed to the design and development of the solution: Python ETL pipelines and a data warehouse to centralize production data, the web application for hourly data entry, and the KPI dashboards with threshold-based alerts.</p></div></div>
+<div class="split reveal" id="gallery"><h2>Screenshots</h2><div><ul class="gallery"><li><button type="button" data-full="../../assets/img/kosu-line.webp" data-caption="Line management: shift parameters" aria-label="Enlarge: Line management: shift parameters"><figure><div class="frame"><img src="../../assets/img/kosu-line-t.webp" alt="Line management: shift parameters" width="800" height="500" loading="lazy" decoding="async"></div><figcaption>Line management: shift parameters</figcaption></figure></button></li><li><button type="button" data-full="../../assets/img/kosu-muda.webp" data-caption="Lost-time (MUDA) tracking during a shift" aria-label="Enlarge: Lost-time (MUDA) tracking during a shift"><figure><div class="frame"><img src="../../assets/img/kosu-muda-t.webp" alt="Lost-time (MUDA) tracking during a shift" width="800" height="500" loading="lazy" decoding="async"></div><figcaption>Lost-time (MUDA) tracking during a shift</figcaption></figure></button></li><li><button type="button" data-full="../../assets/img/kosu-deviations.webp" data-caption="Deviations and corrective measures" aria-label="Enlarge: Deviations and corrective measures"><figure><div class="frame"><img src="../../assets/img/kosu-deviations-t.webp" alt="Deviations and corrective measures" width="800" height="500" loading="lazy" decoding="async"></div><figcaption>Deviations and corrective measures</figcaption></figure></button></li><li><button type="button" data-full="../../assets/img/kosu-status.webp" data-caption="Real-time status of production lines" aria-label="Enlarge: Real-time status of production lines"><figure><div class="frame"><img src="../../assets/img/kosu-status-t.webp" alt="Real-time status of production lines" width="800" height="500" loading="lazy" decoding="async"></div><figcaption>Real-time status of production lines</figcaption></figure></button></li><li><button type="button" data-full="../../assets/img/kosu-objectives.webp" data-caption="Weekly KOSU objectives (improvement curve)" aria-label="Enlarge: Weekly KOSU objectives (improvement curve)"><figure><div class="frame"><img src="../../assets/img/kosu-objectives-t.webp" alt="Weekly KOSU objectives (improvement curve)" width="800" height="500" loading="lazy" decoding="async"></div><figcaption>Weekly KOSU objectives (improvement curve)</figcaption></figure></button></li><li><button type="button" data-full="../../assets/img/kosu-import.webp" data-caption="Import of product references from Excel or CSV" aria-label="Enlarge: Import of product references from Excel or CSV"><figure><div class="frame"><img src="../../assets/img/kosu-import-t.webp" alt="Import of product references from Excel or CSV" width="800" height="500" loading="lazy" decoding="async"></div><figcaption>Import of product references from Excel or CSV</figcaption></figure></button></li><li><button type="button" data-full="../../assets/img/kosu-dashboard.webp" data-caption="Digital KOSU dashboard with color-coded alerts" aria-label="Enlarge: Digital KOSU dashboard with color-coded alerts"><figure><div class="frame"><img src="../../assets/img/kosu-dashboard-t.webp" alt="Digital KOSU dashboard with color-coded alerts" width="800" height="500" loading="lazy" decoding="async"></div><figcaption>Digital KOSU dashboard with color-coded alerts</figcaption></figure></button></li><li><button type="button" data-full="../../assets/img/kosu-actions.webp" data-caption="Hourly management menu" aria-label="Enlarge: Hourly management menu"><figure><div class="frame"><img src="../../assets/img/kosu-actions-t.webp" alt="Hourly management menu" width="800" height="500" loading="lazy" decoding="async"></div><figcaption>Hourly management menu</figcaption></figure></button></li></ul></div></div>
+<div class="split reveal"><h2>Technologies</h2><div><ul class="stack" style="margin-top:0"><li>Python</li><li>ETL pipelines</li><li>Data warehouse</li><li>FastAPI</li><li>PostgreSQL</li><li>React</li><li>Node.js</li><li>KPI dashboards</li></ul></div></div>
+<nav class="next" aria-label="More projects">
+  <a href="../../projects/intellihire/">← IntelliHire</a>
+  <a href="../../projects/fraudlens/">FraudLens →</a>
+</nav>
+</div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Sabrine Bejaoui · Bizerte, Tunisia</span>
+    <span>Data Science · Machine Learning · Business Intelligence</span>
+  </div>
+</footer>
+<div class="lb" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="x" aria-label="Close">×</button>
+  <button class="prev" aria-label="Previous image">‹</button>
+  <figure><img src="" alt=""><figcaption></figcaption></figure>
+  <button class="nx" aria-label="Next image">›</button>
+</div>
+<script src="../../assets/js/site.js" defer></script>
+</body>
+</html>

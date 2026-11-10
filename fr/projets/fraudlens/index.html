@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="fr" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FraudLens — Sabrine Bejaoui</title>
+<meta name="description" content="Une plateforme multi-organisations qui transforme des fichiers de transactions en alertes de fraude priorisées et expliquées, et offre aux analystes un espace structuré pour les investiguer.">
+<meta name="author" content="Sabrine Bejaoui">
+<link rel="canonical" href="https://sabrine-bejaoui.github.io/fr/projets/fraudlens/">
+<link rel="alternate" hreflang="fr" href="https://sabrine-bejaoui.github.io/fr/projets/fraudlens/">
+<link rel="alternate" hreflang="en" href="https://sabrine-bejaoui.github.io/projects/fraudlens/">
+<link rel="alternate" hreflang="x-default" href="https://sabrine-bejaoui.github.io/projects/fraudlens/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FraudLens — Sabrine Bejaoui">
+<meta property="og:description" content="Une plateforme multi-organisations qui transforme des fichiers de transactions en alertes de fraude priorisées et expliquées, et offre aux analystes un espace structuré pour les investiguer.">
+<meta property="og:url" content="https://sabrine-bejaoui.github.io/fr/projets/fraudlens/">
+<meta property="og:image" content="https://sabrine-bejaoui.github.io/assets/img/og.png">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FAF8F4">
+<link rel="icon" href="../../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../../../assets/fonts/instrument-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../../assets/fonts/newsreader-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../../assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="../../../fr/"><span class="mono">SB</span><span>Sabrine Bejaoui</span></a>
+    <button class="menu-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    <ul class="nav-links" id="nav-links"><li><a href="../../../fr/#about">À propos</a></li><li><a href="../../../fr/#projects">Projets</a></li><li><a href="../../../fr/#skills">Compétences</a></li><li><a href="../../../fr/#experience">Parcours</a></li><li><a href="../../../fr/#contact">Contact</a></li><li><div class="lang" role="group" aria-label="Langue"><a href="../../../projects/fraudlens/" hreflang="en" lang="en" data-lang-switch="en" aria-label="English version">EN</a><span aria-current="true">FR</span></div></li></ul>
+  </div>
+</header>
+<main id="main">
+<div class="wrap">
+  <p class="crumb"><a href="../../../fr/#projects">← Tous les projets</a></p>
+  <div class="p-hero">
+    <span class="eyebrow">Détection de fraude · Machine learning · IA explicable</span>
+    <h1>FraudLens</h1>
+    <p class="lead">Une plateforme multi-organisations qui transforme des fichiers de transactions en alertes de fraude priorisées et expliquées, et offre aux analystes un espace structuré pour les investiguer.</p>
+    <dl class="p-meta"><div><dt>Type</dt><dd>Projet personnel</dd></div><div><dt>Rôle</dt><dd>Conception et développement complet</dd></div><div><dt>Interface</dt><dd>Anglais et français</dd></div><div><dt>Code</dt><dd>Privé · vitrine publique</dd></div></dl>
+  </div>
+  <figure class="cover reveal" style="margin:0"><img src="../../../assets/img/fl-overview-fr.webp" alt="Tableau de bord de synthèse de FraudLens" fetchpriority="high"></figure>
+  <p class="note">Les captures montrent l&#x27;application en fonctionnement sur un espace de démonstration construit à partir d&#x27;un jeu de données public.</p>
+<div class="split reveal"><h2>La problématique</h2><div class="prose"><p>Les équipes antifraude reçoivent des données de transactions sous des formats variés, issues de nombreux systèmes. Les modèles sont souvent appliqués à des données sur lesquelles ils n&#x27;ont jamais été entraînés, les alertes arrivent sans explication, et la frontière entre le score d&#x27;un modèle et la décision confirmée d&#x27;un analyste se brouille dans les rapports.</p><p>FraudLens repose sur trois principes : vérifier les données avant de les scorer, expliquer chaque alerte, et séparer les signaux des modèles des décisions des analystes.</p></div></div>
+<div class="split reveal"><h2>Objectifs</h2><div class="prose"><ul><li>Permettre à toute organisation d&#x27;importer ses propres données de transactions, quel que soit leur format, sans perdre ni modifier silencieusement d&#x27;enregistrements.</li><li>Empêcher qu&#x27;un modèle soit appliqué à des données qu&#x27;il ne peut pas légitimement scorer.</li><li>Concentrer le temps des analystes sur les alertes les plus importantes, avec les raisons de chacune.</li><li>Conserver un historique complet et infalsifiable de qui a décidé quoi, et pourquoi.</li></ul></div></div>
+<div class="split reveal"><h2>Fonctionnement</h2><div class="prose"><ol class="flow"><li>Inscription</li><li>Import et mapping</li><li>Validation</li><li>Compatibilité</li><li>Détection</li><li>Investigation et décision</li><li>Rapports et suivi</li></ol><ul class="features"><li><strong>Import et validation des données</strong>Fichiers CSV de tout format ; signification des colonnes suggérée puis confirmée par l&#x27;utilisateur ; enregistrements invalides mis de côté avec leur motif, jamais supprimés.</li><li><strong>Contrôles de compatibilité</strong>Avant le scoring, la plateforme vérifie que les données contiennent toutes les variables requises et ressemblent aux données d&#x27;entraînement.</li><li><strong>Détection</strong>Des modèles approuvés et des règles métier configurables scorent chaque transaction et produisent des alertes priorisées.</li><li><strong>Investigation</strong>File d&#x27;alertes, explications SHAP, dossiers, justification écrite obligatoire des décisions et validation par un analyste senior.</li><li><strong>Model Lab et suivi</strong>Registre et approbation des modèles, courbes précision–rappel et ROC, analyse des seuils, fiches modèles et indicateurs de dérive.</li><li><strong>Gouvernance</strong>Rapports datés en PDF/CSV, en anglais ou en français, et historique d&#x27;audit en ajout seul.</li></ul></div></div>
+<div class="split reveal"><h2>Modèles et évaluation</h2><div class="prose"><p>Les modèles de référence ont été entraînés sur le jeu de données public Credit Card Fraud Detection (284 807 transactions, 492 fraudes) avec un découpage temporel. Les hyperparamètres, le traitement du déséquilibre des classes et le seuil d&#x27;alerte ont été choisis sur une partition de validation ; la partition de test n&#x27;a été utilisée qu&#x27;une fois.</p><div class="table-wrap"><table class="metrics"><thead><tr><th scope='col'>Modèle</th><th scope='col'>PR-AUC</th><th scope='col'>Précision</th><th scope='col'>Rappel</th></tr></thead><tbody><tr><td>Random Forest</td><td class=n>0,811</td><td class=n>90,3 %</td><td class=n>74,7 %</td></tr><tr><td>XGBoost</td><td class=n>0,792</td><td class=n>91,8 %</td><td class=n>74,7 %</td></tr><tr><td>LightGBM</td><td class=n>0,748</td><td class=n>94,4 %</td><td class=n>68,0 %</td></tr><tr><td>Régression logistique</td><td class=n>0,747</td><td class=n>96,1 %</td><td class=n>65,3 %</td></tr><tr><td>Isolation Forest (non supervisé)</td><td class=n>0,054</td><td class=n>8,9 %</td><td class=n>46,7 %</td></tr></tbody></table></div><p class="note">Partition de test : 56 962 transactions, 75 fraudes. La précision, le rappel et la PR-AUC sont présentés plutôt que l&#x27;exactitude, car la fraude représente environ 0,17 % des transactions.</p></div></div>
+<div class="split reveal"><h2>Ma contribution</h2><div class="prose"><p>J&#x27;ai conçu et développé FraudLens de bout en bout : le pipeline d&#x27;import et de validation des données, l&#x27;entraînement et l&#x27;évaluation des modèles sur des données déséquilibrées, les explications SHAP, le backend FastAPI et le schéma PostgreSQL, ainsi que l&#x27;interface React bilingue.</p><p>Le code source est privé. Le dépôt GitHub public présente le produit, son architecture, sa base de données et des captures d&#x27;écran.</p></div></div>
+<div class="split reveal" id="gallery"><h2>Captures d&#x27;écran</h2><div><ul class="gallery"><li><button type="button" data-full="../../../assets/img/fl-queue.webp" data-caption="File d&#x27;alertes priorisées" aria-label="Agrandir: File d&#x27;alertes priorisées"><figure><div class="frame"><img src="../../../assets/img/fl-queue-t.webp" alt="File d&#x27;alertes priorisées" width="800" height="500" loading="lazy" decoding="async"></div><figcaption>File d&#x27;alertes priorisées</figcaption></figure></button></li><li><button type="button" data-full="../../../assets/img/fl-alert-fr.webp" data-caption="Investigation d&#x27;une alerte avec l&#x27;explication du modèle" aria-label="Agrandir: Investigation d&#x27;une alerte avec l&#x27;explication du modèle"><figure><div class="frame"><img src="../../../assets/img/fl-alert-fr-t.webp" alt="Investigation d&#x27;une alerte avec l&#x27;explication du modèle" width="800" height="500" loading="lazy" decoding="async"></div><figcaption>Investigation d&#x27;une alerte avec l&#x27;explication du modèle</figcaption></figure></button></li><li><button type="button" data-full="../../../assets/img/fl-mapping.webp" data-caption="Mapping des colonnes avec justification" aria-label="Agrandir: Mapping des colonnes avec justification"><figure><div class="frame"><img src="../../../assets/img/fl-mapping-t.webp" alt="Mapping des colonnes avec justification" width="800" height="500" loading="lazy" decoding="async"></div><figcaption>Mapping des colonnes avec justification</figcaption></figure></button></li><li><button type="button" data-full="../../../assets/img/fl-profile.webp" data-caption="Profil du jeu de données après validation" aria-label="Agrandir: Profil du jeu de données après validation"><figure><div class="frame"><img src="../../../assets/img/fl-profile-t.webp" alt="Profil du jeu de données après validation" width="800" height="500" loading="lazy" decoding="async"></div><figcaption>Profil du jeu de données après validation</figcaption></figure></button></li><li><button type="button" data-full="../../../assets/img/fl-lab.webp" data-caption="Registre des modèles" aria-label="Agrandir: Registre des modèles"><figure><div class="frame"><img src="../../../assets/img/fl-lab-t.webp" alt="Registre des modèles" width="800" height="500" loading="lazy" decoding="async"></div><figcaption>Registre des modèles</figcaption></figure></button></li><li><button type="button" data-full="../../../assets/img/fl-model-fr.webp" data-caption="Évaluation d&#x27;un modèle sur la partition de test" aria-label="Agrandir: Évaluation d&#x27;un modèle sur la partition de test"><figure><div class="frame"><img src="../../../assets/img/fl-model-fr-t.webp" alt="Évaluation d&#x27;un modèle sur la partition de test" width="800" height="500" loading="lazy" decoding="async"></div><figcaption>Évaluation d&#x27;un modèle sur la partition de test</figcaption></figure></button></li><li><button type="button" data-full="../../../assets/img/fl-monitoring.webp" data-caption="Suivi des modèles : distribution des scores et dérive des variables" aria-label="Agrandir: Suivi des modèles : distribution des scores et dérive des variables"><figure><div class="frame"><img src="../../../assets/img/fl-monitoring-t.webp" alt="Suivi des modèles : distribution des scores et dérive des variables" width="800" height="500" loading="lazy" decoding="async"></div><figcaption>Suivi des modèles : distribution des scores et dérive des variables</figcaption></figure></button></li><li><button type="button" data-full="../../../assets/img/fl-intel-fr.webp" data-caption="Analyse de la fraude par période et par montant" aria-label="Agrandir: Analyse de la fraude par période et par montant"><figure><div class="frame"><img src="../../../assets/img/fl-intel-fr-t.webp" alt="Analyse de la fraude par période et par montant" width="800" height="500" loading="lazy" decoding="async"></div><figcaption>Analyse de la fraude par période et par montant</figcaption></figure></button></li></ul><p class="note">Certaines captures montrent l&#x27;interface en anglais ; l&#x27;application est entièrement disponible en français.</p></div></div>
+<div class="split reveal"><h2>Technologies</h2><div><ul class="stack" style="margin-top:0"><li>Python</li><li>pandas</li><li>NumPy</li><li>scikit-learn</li><li>XGBoost</li><li>LightGBM</li><li>imbalanced-learn</li><li>SHAP</li><li>FastAPI</li><li>Pydantic</li><li>SQLAlchemy</li><li>Alembic</li><li>PostgreSQL</li><li>React</li><li>TypeScript</li><li>Vite</li><li>Tailwind CSS</li><li>Recharts</li><li>i18next</li><li>ReportLab</li></ul><p style="margin-top:18px"><a class="btn btn-ghost" href="https://github.com/Sabrine-Bejaoui/FraudLens-Platform" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.86v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg> Présentation du projet sur GitHub</a></p></div></div>
+<nav class="next" aria-label="Autres projets">
+  <a href="../../../fr/projets/kosu-digital/">← KOSU Digital chez LEONI</a>
+  <a href="../../../fr/projets/intellihire/">IntelliHire →</a>
+</nav>
+</div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Sabrine Bejaoui · Bizerte, Tunisia</span>
+    <span>Data Science · Machine Learning · Business Intelligence</span>
+  </div>
+</footer>
+<div class="lb" role="dialog" aria-modal="true" aria-label="Visionneuse d&#x27;images">
+  <button class="x" aria-label="Fermer">×</button>
+  <button class="prev" aria-label="Image précédente">‹</button>
+  <figure><img src="" alt=""><figcaption></figcaption></figure>
+  <button class="nx" aria-label="Image suivante">›</button>
+</div>
+<script src="../../../assets/js/site.js" defer></script>
+</body>
+</html>

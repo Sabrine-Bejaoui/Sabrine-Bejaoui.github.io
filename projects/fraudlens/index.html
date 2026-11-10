@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FraudLens — Sabrine Bejaoui</title>
+<meta name="description" content="A multi-organization platform that turns transaction files into prioritized, explained fraud alerts and gives analysts a structured place to investigate them.">
+<meta name="author" content="Sabrine Bejaoui">
+<link rel="canonical" href="https://sabrine-bejaoui.github.io/projects/fraudlens/">
+<link rel="alternate" hreflang="en" href="https://sabrine-bejaoui.github.io/projects/fraudlens/">
+<link rel="alternate" hreflang="fr" href="https://sabrine-bejaoui.github.io/fr/projets/fraudlens/">
+<link rel="alternate" hreflang="x-default" href="https://sabrine-bejaoui.github.io/projects/fraudlens/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FraudLens — Sabrine Bejaoui">
+<meta property="og:description" content="A multi-organization platform that turns transaction files into prioritized, explained fraud alerts and gives analysts a structured place to investigate them.">
+<meta property="og:url" content="https://sabrine-bejaoui.github.io/projects/fraudlens/">
+<meta property="og:image" content="https://sabrine-bejaoui.github.io/assets/img/og.png">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FAF8F4">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../../assets/fonts/instrument-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../assets/fonts/newsreader-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="../../"><span class="mono">SB</span><span>Sabrine Bejaoui</span></a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    <ul class="nav-links" id="nav-links"><li><a href="../../#about">About</a></li><li><a href="../../#projects">Projects</a></li><li><a href="../../#skills">Skills</a></li><li><a href="../../#experience">Experience</a></li><li><a href="../../#contact">Contact</a></li><li><div class="lang" role="group" aria-label="Language"><span aria-current="true">EN</span><a href="../../fr/projets/fraudlens/" hreflang="fr" lang="fr" data-lang-switch="fr" aria-label="Version française">FR</a></div></li></ul>
+  </div>
+</header>
+<main id="main">
+<div class="wrap">
+  <p class="crumb"><a href="../../#projects">← All projects</a></p>
+  <div class="p-hero">
+    <span class="eyebrow">Fraud detection · Machine learning · Explainable AI</span>
+    <h1>FraudLens</h1>
+    <p class="lead">A multi-organization platform that turns transaction files into prioritized, explained fraud alerts and gives analysts a structured place to investigate them.</p>
+    <dl class="p-meta"><div><dt>Type</dt><dd>Personal project</dd></div><div><dt>Role</dt><dd>Design and full development</dd></div><div><dt>Interface</dt><dd>English and French</dd></div><div><dt>Code</dt><dd>Private · public showcase</dd></div></dl>
+  </div>
+  <figure class="cover reveal" style="margin:0"><img src="../../assets/img/fl-overview-en.webp" alt="FraudLens executive overview dashboard" fetchpriority="high"></figure>
+  <p class="note">Screenshots show the running application with a demonstration workspace built from a public dataset.</p>
+<div class="split reveal"><h2>The problem</h2><div class="prose"><p>Fraud teams receive transaction data in many layouts, from many systems. Models are often applied to data they were never trained on, alerts arrive without explanations, and the line between a model&#x27;s score and an analyst&#x27;s confirmed finding gets blurred in reporting.</p><p>FraudLens is built on three principles: check the data before scoring it, explain every alert, and keep model signals separate from analyst decisions.</p></div></div>
+<div class="split reveal"><h2>Objectives</h2><div class="prose"><ul><li>Let any organization bring its own transaction data, whatever its column layout, without losing or silently altering records.</li><li>Prevent detection models from being applied to data they cannot legitimately score.</li><li>Focus analysts&#x27; time on the alerts that matter most, with the reasons behind each one.</li><li>Keep a complete, tamper-resistant record of who decided what, and why.</li></ul></div></div>
+<div class="split reveal"><h2>How it works</h2><div class="prose"><ol class="flow"><li>Onboard</li><li>Import &amp; map</li><li>Validate</li><li>Check compatibility</li><li>Detect</li><li>Investigate &amp; decide</li><li>Report &amp; monitor</li></ol><ul class="features"><li><strong>Data import and validation</strong>CSV files of any layout; column meanings suggested and confirmed by the user; invalid records set aside with their reason, never deleted.</li><li><strong>Model compatibility checks</strong>Before scoring, the platform checks that the data has every input a model needs and resembles its training data.</li><li><strong>Detection</strong>Approved models and configurable business rules score each transaction and produce prioritized alerts.</li><li><strong>Investigation</strong>Alert queue, SHAP explanations, cases, mandatory written reasoning for decisions and senior validation.</li><li><strong>Model Lab and monitoring</strong>Model registry and approval, precision–recall and ROC curves, threshold analysis, model cards and drift indicators.</li><li><strong>Governance</strong>Dated PDF/CSV reports in English or French and an append-only audit history.</li></ul></div></div>
+<div class="split reveal"><h2>Models and evaluation</h2><div class="prose"><p>Reference models were trained on the public Credit Card Fraud Detection dataset (284,807 transactions, 492 frauds) with a temporal split. Hyper-parameters, class-imbalance treatment and the alert threshold were chosen on a validation partition; the test partition was used once.</p><div class="table-wrap"><table class="metrics"><thead><tr><th scope='col'>Model</th><th scope='col'>PR-AUC</th><th scope='col'>Precision</th><th scope='col'>Recall</th></tr></thead><tbody><tr><td>Random Forest</td><td class=n>0.811</td><td class=n>90.3%</td><td class=n>74.7%</td></tr><tr><td>XGBoost</td><td class=n>0.792</td><td class=n>91.8%</td><td class=n>74.7%</td></tr><tr><td>LightGBM</td><td class=n>0.748</td><td class=n>94.4%</td><td class=n>68.0%</td></tr><tr><td>Logistic Regression</td><td class=n>0.747</td><td class=n>96.1%</td><td class=n>65.3%</td></tr><tr><td>Isolation Forest (unsupervised)</td><td class=n>0.054</td><td class=n>8.9%</td><td class=n>46.7%</td></tr></tbody></table></div><p class="note">Test partition: 56,962 transactions, 75 frauds. Precision, recall and PR-AUC are reported instead of accuracy because fraud is about 0.17% of transactions.</p></div></div>
+<div class="split reveal"><h2>My contribution</h2><div class="prose"><p>I designed and developed FraudLens end to end: the data import and validation pipeline, model training and evaluation on imbalanced data, SHAP explanations, the FastAPI backend and PostgreSQL schema, and the bilingual React interface.</p><p>The source code is private. The public GitHub repository presents the product, its architecture, its database design and screenshots.</p></div></div>
+<div class="split reveal" id="gallery"><h2>Screenshots</h2><div><ul class="gallery"><li><button type="button" data-full="../../assets/img/fl-queue.webp" data-caption="Prioritized alert queue" aria-label="Enlarge: Prioritized alert queue"><figure><div class="frame"><img src="../../assets/img/fl-queue-t.webp" alt="Prioritized alert queue" width="800" height="500" loading="lazy" decoding="async"></div><figcaption>Prioritized alert queue</figcaption></figure></button></li><li><button type="button" data-full="../../assets/img/fl-alert-en.webp" data-caption="Alert investigation with model explanation" aria-label="Enlarge: Alert investigation with model explanation"><figure><div class="frame"><img src="../../assets/img/fl-alert-en-t.webp" alt="Alert investigation with model explanation" width="800" height="500" loading="lazy" decoding="async"></div><figcaption>Alert investigation with model explanation</figcaption></figure></button></li><li><button type="button" data-full="../../assets/img/fl-mapping.webp" data-caption="Column mapping with stated reasons" aria-label="Enlarge: Column mapping with stated reasons"><figure><div class="frame"><img src="../../assets/img/fl-mapping-t.webp" alt="Column mapping with stated reasons" width="800" height="500" loading="lazy" decoding="async"></div><figcaption>Column mapping with stated reasons</figcaption></figure></button></li><li><button type="button" data-full="../../assets/img/fl-profile.webp" data-caption="Dataset profile after validation" aria-label="Enlarge: Dataset profile after validation"><figure><div class="frame"><img src="../../assets/img/fl-profile-t.webp" alt="Dataset profile after validation" width="800" height="500" loading="lazy" decoding="async"></div><figcaption>Dataset profile after validation</figcaption></figure></button></li><li><button type="button" data-full="../../assets/img/fl-lab.webp" data-caption="Model registry" aria-label="Enlarge: Model registry"><figure><div class="frame"><img src="../../assets/img/fl-lab-t.webp" alt="Model registry" width="800" height="500" loading="lazy" decoding="async"></div><figcaption>Model registry</figcaption></figure></button></li><li><button type="button" data-full="../../assets/img/fl-model-en.webp" data-caption="Model evaluation on the held-out test partition" aria-label="Enlarge: Model evaluation on the held-out test partition"><figure><div class="frame"><img src="../../assets/img/fl-model-en-t.webp" alt="Model evaluation on the held-out test partition" width="800" height="500" loading="lazy" decoding="async"></div><figcaption>Model evaluation on the held-out test partition</figcaption></figure></button></li><li><button type="button" data-full="../../assets/img/fl-monitoring.webp" data-caption="Model monitoring: score distribution and input drift" aria-label="Enlarge: Model monitoring: score distribution and input drift"><figure><div class="frame"><img src="../../assets/img/fl-monitoring-t.webp" alt="Model monitoring: score distribution and input drift" width="800" height="500" loading="lazy" decoding="async"></div><figcaption>Model monitoring: score distribution and input drift</figcaption></figure></button></li><li><button type="button" data-full="../../assets/img/fl-intel-en.webp" data-caption="Fraud intelligence by time and amount" aria-label="Enlarge: Fraud intelligence by time and amount"><figure><div class="frame"><img src="../../assets/img/fl-intel-en-t.webp" alt="Fraud intelligence by time and amount" width="800" height="500" loading="lazy" decoding="async"></div><figcaption>Fraud intelligence by time and amount</figcaption></figure></button></li></ul></div></div>
+<div class="split reveal"><h2>Technologies</h2><div><ul class="stack" style="margin-top:0"><li>Python</li><li>pandas</li><li>NumPy</li><li>scikit-learn</li><li>XGBoost</li><li>LightGBM</li><li>imbalanced-learn</li><li>SHAP</li><li>FastAPI</li><li>Pydantic</li><li>SQLAlchemy</li><li>Alembic</li><li>PostgreSQL</li><li>React</li><li>TypeScript</li><li>Vite</li><li>Tailwind CSS</li><li>Recharts</li><li>i18next</li><li>ReportLab</li></ul><p style="margin-top:18px"><a class="btn btn-ghost" href="https://github.com/Sabrine-Bejaoui/FraudLens-Platform" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.86v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg> Project showcase on GitHub</a></p></div></div>
+<nav class="next" aria-label="More projects">
+  <a href="../../projects/kosu-digital/">← KOSU Digital at LEONI</a>
+  <a href="../../projects/intellihire/">IntelliHire →</a>
+</nav>
+</div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Sabrine Bejaoui · Bizerte, Tunisia</span>
+    <span>Data Science · Machine Learning · Business Intelligence</span>
+  </div>
+</footer>
+<div class="lb" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="x" aria-label="Close">×</button>
+  <button class="prev" aria-label="Previous image">‹</button>
+  <figure><img src="" alt=""><figcaption></figcaption></figure>
+  <button class="nx" aria-label="Next image">›</button>
+</div>
+<script src="../../assets/js/site.js" defer></script>
+</body>
+</html>

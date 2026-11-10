@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IntelliHire — Sabrine Bejaoui</title>
+<meta name="description" content="A recruitment web application that extracts candidate profiles from PDF resumes and ranks every candidate against every job offer, with a plain-language explanation of each score.">
+<meta name="author" content="Sabrine Bejaoui">
+<link rel="canonical" href="https://sabrine-bejaoui.github.io/projects/intellihire/">
+<link rel="alternate" hreflang="en" href="https://sabrine-bejaoui.github.io/projects/intellihire/">
+<link rel="alternate" hreflang="fr" href="https://sabrine-bejaoui.github.io/fr/projets/intellihire/">
+<link rel="alternate" hreflang="x-default" href="https://sabrine-bejaoui.github.io/projects/intellihire/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="IntelliHire — Sabrine Bejaoui">
+<meta property="og:description" content="A recruitment web application that extracts candidate profiles from PDF resumes and ranks every candidate against every job offer, with a plain-language explanation of each score.">
+<meta property="og:url" content="https://sabrine-bejaoui.github.io/projects/intellihire/">
+<meta property="og:image" content="https://sabrine-bejaoui.github.io/assets/img/og.png">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FAF8F4">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../../assets/fonts/instrument-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../assets/fonts/newsreader-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="../../"><span class="mono">SB</span><span>Sabrine Bejaoui</span></a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    <ul class="nav-links" id="nav-links"><li><a href="../../#about">About</a></li><li><a href="../../#projects">Projects</a></li><li><a href="../../#skills">Skills</a></li><li><a href="../../#experience">Experience</a></li><li><a href="../../#contact">Contact</a></li><li><div class="lang" role="group" aria-label="Language"><span aria-current="true">EN</span><a href="../../fr/projets/intellihire/" hreflang="fr" lang="fr" data-lang-switch="fr" aria-label="Version française">FR</a></div></li></ul>
+  </div>
+</header>
+<main id="main">
+<div class="wrap">
+  <p class="crumb"><a href="../../#projects">← All projects</a></p>
+  <div class="p-hero">
+    <span class="eyebrow">NLP · Semantic search · Recruitment</span>
+    <h1>IntelliHire</h1>
+    <p class="lead">A recruitment web application that extracts candidate profiles from PDF resumes and ranks every candidate against every job offer, with a plain-language explanation of each score.</p>
+    <dl class="p-meta"><div><dt>Type</dt><dd>Academic project</dd></div><div><dt>Role</dt><dd>Design and development</dd></div><div><dt>Domain</dt><dd>HR and recruitment</dd></div><div><dt>Code</dt><dd>Public on GitHub</dd></div></dl>
+  </div>
+  <figure class="cover reveal" style="margin:0"><img src="../../assets/img/ih-overview.webp" alt="IntelliHire recruitment overview dashboard" fetchpriority="high"></figure>
+  
+<div class="split reveal"><h2>The problem</h2><div class="prose"><p>Recruiters spend a large part of their time reading resumes and comparing them with job requirements. Keyword filters miss candidates who describe the same skill differently, and scores without explanations are hard to trust.</p></div></div>
+<div class="split reveal"><h2>Objectives</h2><div class="prose"><ul><li>Extract each candidate&#x27;s skills, experience and education automatically from PDF resumes.</li><li>Score every candidate against every job offer on clear, separate criteria.</li><li>Explain each score in plain language, with matched and missing skills.</li><li>Help recruiters compare candidates side by side and track recruitment stages.</li></ul></div></div>
+<div class="split reveal"><h2>Key features</h2><div class="prose"><ul class="features"><li><strong>Resume parsing</strong>Text extraction with PyMuPDF, with Tesseract OCR for scanned pages, or manual candidate entry.</li><li><strong>Profile extraction</strong>Skills, experience and education identified with spaCy and a skills dictionary.</li><li><strong>Matching</strong>Lexical (TF-IDF, BM25) and semantic (Sentence Transformers) similarity, with configurable weights and thresholds.</li><li><strong>Four scoring criteria</strong>Skills match, relevant experience, job requirements match and education relevance.</li><li><strong>Explanations</strong>Each score comes with matched, partial and missing skills in plain language.</li><li><strong>Comparison</strong>Side-by-side comparison of candidates with a recommendation, and stage tracking per job offer.</li></ul></div></div>
+<div class="split reveal"><h2>My contribution</h2><div class="prose"><p>I designed and developed the application: the resume parsing and NLP extraction, the lexical and semantic scoring, the FastAPI REST API with a PostgreSQL schema managed by versioned migrations, automated tests with pytest, and the React and TypeScript interface.</p></div></div>
+<div class="split reveal" id="gallery"><h2>Screenshots</h2><div><ul class="gallery"><li><button type="button" data-full="../../assets/img/ih-candidates.webp" data-caption="Candidates ranked against a job offer" aria-label="Enlarge: Candidates ranked against a job offer"><figure><div class="frame"><img src="../../assets/img/ih-candidates-t.webp" alt="Candidates ranked against a job offer" width="800" height="500" loading="lazy" decoding="async"></div><figcaption>Candidates ranked against a job offer</figcaption></figure></button></li><li><button type="button" data-full="../../assets/img/ih-candidate.webp" data-caption="Candidate profile with score explanation" aria-label="Enlarge: Candidate profile with score explanation"><figure><div class="frame"><img src="../../assets/img/ih-candidate-t.webp" alt="Candidate profile with score explanation" width="800" height="500" loading="lazy" decoding="async"></div><figcaption>Candidate profile with score explanation</figcaption></figure></button></li><li><button type="button" data-full="../../assets/img/ih-compare.webp" data-caption="Side-by-side candidate comparison" aria-label="Enlarge: Side-by-side candidate comparison"><figure><div class="frame"><img src="../../assets/img/ih-compare-t.webp" alt="Side-by-side candidate comparison" width="800" height="500" loading="lazy" decoding="async"></div><figcaption>Side-by-side candidate comparison</figcaption></figure></button></li><li><button type="button" data-full="../../assets/img/ih-jobs.webp" data-caption="Job offers and required skills coverage" aria-label="Enlarge: Job offers and required skills coverage"><figure><div class="frame"><img src="../../assets/img/ih-jobs-t.webp" alt="Job offers and required skills coverage" width="800" height="500" loading="lazy" decoding="async"></div><figcaption>Job offers and required skills coverage</figcaption></figure></button></li><li><button type="button" data-full="../../assets/img/ih-settings.webp" data-caption="Configurable evaluation weights and thresholds" aria-label="Enlarge: Configurable evaluation weights and thresholds"><figure><div class="frame"><img src="../../assets/img/ih-settings-t.webp" alt="Configurable evaluation weights and thresholds" width="800" height="500" loading="lazy" decoding="async"></div><figcaption>Configurable evaluation weights and thresholds</figcaption></figure></button></li><li><button type="button" data-full="../../assets/img/ih-overview.webp" data-caption="Recruitment overview" aria-label="Enlarge: Recruitment overview"><figure><div class="frame"><img src="../../assets/img/ih-overview-t.webp" alt="Recruitment overview" width="800" height="500" loading="lazy" decoding="async"></div><figcaption>Recruitment overview</figcaption></figure></button></li></ul></div></div>
+<div class="split reveal"><h2>Technologies</h2><div><ul class="stack" style="margin-top:0"><li>Python</li><li>spaCy</li><li>Sentence Transformers</li><li>scikit-learn (TF-IDF)</li><li>BM25</li><li>PyMuPDF</li><li>Tesseract OCR</li><li>NumPy</li><li>FastAPI</li><li>Pydantic</li><li>SQLAlchemy</li><li>PostgreSQL</li><li>pytest</li><li>React</li><li>TypeScript</li><li>Vite</li><li>Tailwind CSS</li><li>Recharts</li><li>Docker Compose</li></ul><p style="margin-top:18px"><a class="btn btn-ghost" href="https://github.com/Sabrine-Bejaoui/IntelliHire-Intelligent-Recruitment-Assistant" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.86v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg> Source code on GitHub</a></p></div></div>
+<nav class="next" aria-label="More projects">
+  <a href="../../projects/fraudlens/">← FraudLens</a>
+  <a href="../../projects/kosu-digital/">KOSU Digital at LEONI →</a>
+</nav>
+</div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Sabrine Bejaoui · Bizerte, Tunisia</span>
+    <span>Data Science · Machine Learning · Business Intelligence</span>
+  </div>
+</footer>
+<div class="lb" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="x" aria-label="Close">×</button>
+  <button class="prev" aria-label="Previous image">‹</button>
+  <figure><img src="" alt=""><figcaption></figcaption></figure>
+  <button class="nx" aria-label="Next image">›</button>
+</div>
+<script src="../../assets/js/site.js" defer></script>
+</body>
+</html>
