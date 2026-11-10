@@ -229,7 +229,7 @@ def home(lang):
       <span class="eyebrow">{E(t['contact_eyebrow'])}</span>
       <h2 id="contact-title">{E(t['contact_title'])}</h2>
       <p class="lead" style="margin-top:16px">{E(t['contact_lead'])}</p>
-      <div class="actions"><a class="btn btn-primary" href="mailto:{SITE['email']}">{ICONS['mail']} {E(t['write'])}</a><a class="btn btn-ghost" href="{cv}" download>{ICONS['dl']} {E(t['cta_cv'])}</a></div>
+      <div class="actions"><a class="btn btn-primary" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to={SITE['email']}" target="_blank" rel="noopener">{ICONS['mail']} {E(t['write'])}</a><a class="btn btn-ghost" href="{cv}" download>{ICONS['dl']} {E(t['cta_cv'])}</a></div>
     </div>
     <ul class="contact-list reveal">
       <li><a href="mailto:{SITE['email']}">{ICONS['mail']}<span><small>Email</small>{SITE['email']}</span></a></li>

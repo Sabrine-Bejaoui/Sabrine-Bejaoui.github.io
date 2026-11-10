@@ -32,7 +32,7 @@ T = {
         "facts": [
             ("Studying", "Master's in Decision Support Systems & Data Science, ISG Bizerte"),
             ("Background", "Bachelor's in Business Computing, Business Intelligence"),
-            ("Focus", "Machine Learning, AI, NLP, Business Intelligence"),
+            ("Focus", "Machine Learning, Artificial Intelligence, Natural Language Processing, Business Intelligence"),
             ("Based in", "Bizerte, Tunisia"),
         ],
         "about_eyebrow": "About",
@@ -99,7 +99,7 @@ T = {
         "facts": [
             ("Formation", "Master Système d'Information Décisionnel & Data Science, ISG Bizerte"),
             ("Parcours", "Licence en Informatique Appliquée à la Gestion, Business Intelligence"),
-            ("Domaines", "Machine Learning, IA, NLP, Business Intelligence"),
+            ("Domaines", "Machine Learning, Intelligence Artificielle, Traitement automatique du langage, Business Intelligence"),
             ("Localisation", "Bizerte, Tunisie"),
         ],
         "about_eyebrow": "À propos",
@@ -285,7 +285,7 @@ PROJECTS = [
         "stack_short": ["Python", "spaCy", "Sentence Transformers", "scikit-learn", "FastAPI", "PostgreSQL", "React", "TypeScript"],
         "stack_full": ["Python", "spaCy", "Sentence Transformers", "scikit-learn (TF-IDF)", "BM25", "PyMuPDF", "Tesseract OCR", "NumPy", "FastAPI", "Pydantic", "SQLAlchemy", "PostgreSQL", "pytest", "React", "TypeScript", "Vite", "Tailwind CSS", "Recharts", "Docker Compose"],
         "en": {
-            "name": "IntelliHire",
+            "name": "IntelliHire – Intelligent Recruitment Assistant",
             "tag": "NLP · Semantic search · Recruitment",
             "summary": "A recruitment web application that extracts candidate profiles from PDF resumes and ranks every candidate against every job offer, with a plain-language explanation of each score.",
             "meta": [("Type", "Academic project"), ("Role", "Design and development"), ("Domain", "HR and recruitment"), ("Code", "Public on GitHub")],
@@ -326,7 +326,7 @@ PROJECTS = [
             ],
         },
         "fr": {
-            "name": "IntelliHire",
+            "name": "IntelliHire – Assistant Intelligent de Recrutement",
             "tag": "NLP · Recherche sémantique · Recrutement",
             "summary": "Une application web de recrutement qui extrait les profils des candidats à partir de CV en PDF et classe chaque candidat par rapport à chaque offre, avec une explication claire de chaque score.",
             "meta": [("Type", "Projet académique"), ("Rôle", "Conception et développement"), ("Domaine", "RH et recrutement"), ("Code", "Public sur GitHub")],
