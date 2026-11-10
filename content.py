@@ -32,7 +32,7 @@ T = {
         "facts": [
             ("Studying", "Master's in Decision Support Systems & Data Science, ISG Bizerte"),
             ("Background", "Bachelor's in Business Computing, Business Intelligence"),
-            ("Focus", "Machine Learning, NLP, Business Intelligence"),
+            ("Focus", "Machine Learning, AI, NLP, Business Intelligence"),
             ("Based in", "Bizerte, Tunisia"),
         ],
         "about_eyebrow": "About",
@@ -99,7 +99,7 @@ T = {
         "facts": [
             ("Formation", "Master Système d'Information Décisionnel & Data Science, ISG Bizerte"),
             ("Parcours", "Licence en Informatique Appliquée à la Gestion, Business Intelligence"),
-            ("Domaines", "Machine Learning, NLP, Business Intelligence"),
+            ("Domaines", "Machine Learning, IA, NLP, Business Intelligence"),
             ("Localisation", "Bizerte, Tunisie"),
         ],
         "about_eyebrow": "À propos",
@@ -403,9 +403,6 @@ PROJECTS = [
                         ("KOSU dashboard", "Fed by the ETL pipeline, with color-coded alerts on the gap between actual and target KOSU, and filters by shift and date."),
                     ]),
                 ]},
-                {"title": "My contribution", "blocks": [
-                    ("p", "This was a two-person end-of-studies project. I contributed to the design and development of the solution: Python ETL pipelines and a data warehouse to centralize production data, the web application for hourly data entry, and the KPI dashboards with threshold-based alerts."),
-                ]},
             ],
             "gallery": [
                 ("kosu-line", "Line management: shift parameters"),
@@ -446,9 +443,6 @@ PROJECTS = [
                         ("État des lignes", "Le responsable segment voit en temps réel les lignes en attente et celles dont le problème est résolu."),
                         ("Tableau de bord KOSU", "Alimenté par le pipeline ETL, avec des alertes à code couleur sur l'écart entre KOSU réel et objectif, et des filtres par shift et par date."),
                     ]),
-                ]},
-                {"title": "Ma contribution", "blocks": [
-                    ("p", "Ce projet de fin d'études a été réalisé en binôme. J'ai contribué à la conception et au développement de la solution : les flux ETL en Python et l'entrepôt de données pour centraliser les données de production, l'application web de saisie horaire, et les tableaux de bord KPI avec alertes par seuils."),
                 ]},
             ],
             "gallery": [
