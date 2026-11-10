@@ -269,7 +269,9 @@ def project_page(pr, idx, lang):
     <p class="lead">{E(c['summary'])}</p>
     <dl class="p-meta">{meta}</dl>
   </div>
-  <figure class="cover reveal" style="margin:0"><img src="{p}assets/img/{cover}.webp" alt="{E(c['cover_alt'])}" fetchpriority="high"></figure>
+"""
+    if not pr.get("hide_cover"):
+        out += f"""  <figure class="cover reveal" style="margin:0"><img src="{p}assets/img/{cover}.webp" alt="{E(c['cover_alt'])}" fetchpriority="high"></figure>
   {f'<p class="note">{E(c["cover_note"])}</p>' if c.get("cover_note") else ''}
 """
     for sec in c["sections"]:
